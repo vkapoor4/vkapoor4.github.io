@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varun Kapoor</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: #fff;
+      color: #1a1a1a;
+      font-size: 18px;
+      line-height: 1.75;
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 48px 24px 100px;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+      margin-bottom: 72px;
+    }
+
+    nav a {
+      color: #2563eb;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 28px;
+      color: #111;
+    }
+
+    p {
+      margin-bottom: 22px;
+      color: #333;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .apps-heading {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: lowercase;
+      letter-spacing: 0.04em;
+      color: #888;
+      margin-top: 56px;
+      margin-bottom: 16px;
+    }
+
+    .app-card {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 20px 0;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    .app-card:last-child {
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .app-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .app-name {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #111;
+    }
+
+    .app-link {
+      font-size: 14px;
+      color: #2563eb;
+      white-space: nowrap;
+    }
+
+    .app-desc {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .app-tag {
+      display: inline-block;
+      font-size: 12px;
+      background: #f3f4f6;
+      color: #666;
+      padding: 2px 8px;
+      border-radius: 99px;
+      margin-top: 6px;
+      font-weight: 500;
+    }
+
+    .coming-soon {
+      padding: 16px 0;
+      color: #aaa;
+      font-size: 15px;
+      font-style: italic;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    footer {
+      margin-top: 80px;
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 32px 20px 80px; }
+      nav { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="https://x.com/VarunKaapoor" target="_blank">twitter</a>
+    <a href="https://github.com/vkapoor4" target="_blank">github</a>
+  </nav>
+
+  <h1>hi, i'm Varun.</h1>
+
+  <p>i work at <a href="https://apple.com" target="_blank">Apple</a> and build apps on the side. no coding background — just ideas, AI, and a lot of curiosity.</p>
+
+  <p>i picked up building recently and got hooked fast. there's something addictive about having an idea on monday and shipping it by the weekend.</p>
+
+  <p>still figuring it out. probably always will be.</p>
+
+  <p id="apps" class="apps-heading">apps</p>
+
+  <div class="app-card">
+    <div class="app-row">
+      <span class="app-name">SimpleTab</span>
+      <a class="app-link" href="https://vkapoor4.github.io/simpletab/" target="_blank">learn more ↗</a>
+    </div>
+    <span class="app-desc">personal finance tracker. log expenses, set budgets, and see where your money actually goes.</span>
+    <span class="app-tag">iOS · free</span>
+  </div>
+
+  <div class="app-card">
+    <div class="app-row">
+      <span class="app-name">Vrati</span>
+      <a class="app-link" href="https://vkapoor4.github.io/vrati/" target="_blank">learn more ↗</a>
+    </div>
+    <span class="app-desc">minimal habit tracker. build streaks, stay consistent. no streaks lost to missed notifications.</span>
+    <span class="app-tag">iOS · free</span>
+  </div>
+
+  <div class="coming-soon">more coming soon.</div>
+
+  <footer>
+    built with html. hosted on github pages.
+  </footer>
+
+</body>
+</html>
